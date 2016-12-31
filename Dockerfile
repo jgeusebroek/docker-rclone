@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Jeroen Geusebroek <me@jeroengeusebroek.nl>
 
-ENV PACKAGE_LIST="curl" \
+ENV PACKAGE_LIST="curl fuse" \
     LANG='en_US.UTF-8' \
     LANGUAGE='en_US.UTF-8' \
     TIMEZONE='Europe/Amsterdam' \
