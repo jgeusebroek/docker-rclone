@@ -1,11 +1,10 @@
 FROM alpine:latest
-MAINTAINER Jeroen Geusebroek <me@jeroengeusebroek.nl>
+LABEL maintainer="Jeroen Geusebroek <me@jeroengeusebroek.nl>"
 
 ENV PACKAGE_LIST="curl fuse" \
     LANG='en_US.UTF-8' \
     LANGUAGE='en_US.UTF-8' \
-    TIMEZONE='Europe/Amsterdam' \
-    REFRESHED_AT='2016-12-31'
+    TIMEZONE='Europe/Amsterdam'
 
 RUN apk add --no-cache ${PACKAGE_LIST} && \
 
